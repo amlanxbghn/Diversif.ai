@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const About = () => {
   return (
     <div className="flex flex-col items-left justify-center space-y-5 text-left max-w-2xl">
-      <h1 className="text-4xl font-bold">About Diversify.ai</h1>
+      <h1 className="text-4xl font-bold underline">About Diversify.ai</h1>
       <p className="text-zinc-400">Welcome to Diversif.ai – your go-to platform for seamless content diversification across multiple social media platforms. Our mission is to empower creators, marketers, and businesses by simplifying the process of adapting content to fit the unique requirements and formats of various platforms.</p>
       <h2 className="text-2xl font-bold">What we do</h2>
       <p className="text-zinc-400">In the fast-paced world of digital marketing and content creation, time and efficiency are paramount. Diversif.ai leverages cutting-edge AI technology to automate the transformation of your content, ensuring it’s perfectly tailored for every social media channel you use. Whether you’re adapting a blog post for Facebook, converting a video for Instagram, or crafting a tweet for Twitter, Diversif.ai has you covered.</p>

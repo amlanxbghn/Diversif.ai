@@ -28,7 +28,7 @@ const Convert = () => {
 
   return (
     <div className="flex flex-col items-center p-4">
-      <h1 className="text-3xl font-bold mb-5">Content Optimizer</h1>
+      <h1 className="text-3xl font-bold mb-5">Convert your Content Seamlessly.</h1>
       <form onSubmit={handleSubmit} className="w-full max-w-4xl">
         <div className="flex flex-wrap -mx-2 mb-5">
           <div className="w-full md:w-1/3 px-2 mb-4 md:mb-0">
@@ -70,7 +70,7 @@ const Convert = () => {
             </select>
           </div>
           <div className="w-full md:w-1/6 px-2 flex items-end">
-            <button type="submit" className="w-full py-2 bg-blue-500 text-white rounded font-semibold">Submit</button>
+            <button type="submit" className="w-full py-2 bg-blue-500 text-white rounded-lg font-semibold">Submit</button>
           </div>
         </div>
       </form>
