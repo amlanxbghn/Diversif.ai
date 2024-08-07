@@ -8,11 +8,11 @@ const Navbar = () => {
   const showRegisterButton = location.pathname === '/';
 
   return (
-    <nav className="flex items-center justify-between p-4 h-16">
-      <div className="text-2xl font-bold">MyApp</div>
+    <nav className="flex items-center justify-between p-5">
+      <div className="text-3xl font-bold">diversify.ai</div>
       {showRegisterButton && (
         <Link to="/register">
-          <button className="px-4 py-2 bg-blue-500 text-white rounded">Register</button>
+          <button className="bg-zinc-800 text-white rounded-lg border border-zinc-600 hover:bg-zinc-700 duration-200 m-0 ">Register</button>
         </Link>
       )}
     </nav>
