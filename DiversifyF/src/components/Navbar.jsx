@@ -8,7 +8,7 @@ const Navbar = () => {
   const showRegisterButton = location.pathname === '/';
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-gray-800 text-white h-16">
+    <nav className="flex items-center justify-between p-4 h-16">
       <div className="text-2xl font-bold">MyApp</div>
       {showRegisterButton && (
         <Link to="/register">
