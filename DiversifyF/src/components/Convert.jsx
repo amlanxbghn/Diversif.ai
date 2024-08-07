@@ -12,7 +12,7 @@ const Convert = () => {
 
   const fetchData = async () => {
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-    const prompt = `Convert the following text: "${inputText}" which was originally written for ${convertFrom} platform and optimize it for posting on ${convertTo} with proper format of ${convertTo} so that it gets maximum engagement.`;
+    const prompt = `Convert the following text: "${inputText}" which was originally written for ${convertFrom} platform and optimize it for posting on ${convertTo} with proper format of ${convertTo} so that it gets maximum engagement. Also, don't add any highlights or bold texts`;
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = await response.text();

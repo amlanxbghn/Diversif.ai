@@ -2,7 +2,7 @@ import React from 'react';
 import Convert from './Convert';
 import { Link } from 'react-router-dom';
 
-const PageOne = () => {
+const ConvertPage = () => {
   return (
     <div className="flex flex-col items-center p-4">
       <div className="absolute top-4 left-4 text-2xl font-bold">MyApp</div>
@@ -16,4 +16,4 @@ const PageOne = () => {
   );
 }
 
-export default PageOne;
+export default ConvertPage;

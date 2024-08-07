@@ -8,7 +8,7 @@ const Navbar = () => {
   const showRegisterButton = location.pathname === '/';
 
   return (
-    <nav className="flex items-center justify-between p-5">
+    <nav className="flex items-center justify-between p-5 h-20">
       <div className="text-3xl font-bold">diversify.ai</div>
       {showRegisterButton && (
         <Link to="/register">

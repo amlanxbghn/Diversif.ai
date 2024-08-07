@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import PageOne from './components/PageOne';
-import PageTwo from './components/PageTwo';
+import Home from './components/Home/Home';
+import PageOne from './components/ConvertPage';
+import PageTwo from './components/About';
 import Register from './components/Register';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
