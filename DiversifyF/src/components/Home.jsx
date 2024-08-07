@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center space-y-4">
-      <h1 className="text-4xl font-bold">Welcome to the Home Page</h1>
-      <p className="text-xl">This is the home page paragraph.</p>
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-6xl font-bold">Cross Platform</h1>
+      <h1 className="text-6xl font-bold mt-1">Content Diversification Tool.</h1>
+      <p className="text-xl font-medium text-zinc-400 mt-5">Bridge Platforms Seamlessly - Empower your Presence Everywhere.</p>
+      <p className="text-xl font-medium text-zinc-400">Powered by AI.</p>
       <Link to="/page-one">
         <button className="px-4 py-2 bg-blue-500 text-white rounded">Go to Page One</button>
       </Link>
