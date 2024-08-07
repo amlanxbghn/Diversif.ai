@@ -1,0 +1,18 @@
+.aboutbtn:hover{
+    .aboutbtn-child{
+        background-color: rgb(24 24 27);
+    }
+    .aboutbtn-child-div{
+        .aboutbtn-child{
+            background-color: rgb(24 24 27);
+            transition: background-color 0.2s;
+        }
+    }
+}
+
+.aboutbtn{
+    .aboutbtn-child{
+        transition: background-color 0.2s;
+    }
+}
+
