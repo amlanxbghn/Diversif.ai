@@ -1,0 +1,16 @@
+.footer {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .footer p:first-child {
+    font-size: 0.875rem;
+    font-weight: medium;
+  }
+  
+  .footer p:last-child {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #a1a1aa;
+  }
+  

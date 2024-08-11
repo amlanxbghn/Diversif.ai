@@ -1,0 +1,30 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .register-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .register-text {
+    font-size: 1.25rem;
+    color: #a1a1aa; /* zinc-400 */
+  }
+  
+  .register-button {
+    padding: 0.5rem 1rem;
+    background-color: #b91c1c; /* red-700 */
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .register-button:hover {
+    background-color: #991b1b; /* red-800 */
+  }
+  

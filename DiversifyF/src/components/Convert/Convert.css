@@ -1,0 +1,55 @@
+.convert-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .convert-container h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .form-control label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: medium;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-control input,
+  .form-control select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+  }
+  
+  .form-control button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .result {
+    margin-top: 1.25rem;
+    width: 100%;
+    max-width: 32rem;
+    text-align: left;
+  }
+  

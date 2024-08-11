@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
   const location = useLocation();
 
-  // Conditionally render the Register button based on the route
   const showRegisterButton = location.pathname === '/';
 
   return (
-    <nav className="flex items-center justify-between p-5 h-20">
-      <Link to="/" className="text-3xl font-bold">
+    <nav className="navbar">
+      <Link to="/" className="navbar-brand">
         diversify.ai
       </Link>
       {showRegisterButton && (
         <Link to="/register">
-          <button className="bg-zinc-800 text-white rounded-lg border border-zinc-600 hover:bg-zinc-700 duration-200 m-0 ">Register</button>
+          <button className="register-button">Register</button>
         </Link>
       )}
     </nav>
