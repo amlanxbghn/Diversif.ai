@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const Convert = () => {
@@ -7,6 +8,14 @@ const Convert = () => {
   const [inputText, setInputText] = useState("");
   const [convertFrom, setConvertFrom] = useState("");
   const [convertTo, setConvertTo] = useState("");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      navigate('/register'); // Redirect to register page if not logged in
+    }
+  }, [navigate]);
 
   const genAI = new GoogleGenerativeAI("AIzaSyCy0Remq9c1uGAPvmIMsuTZZi_lG4EAy3k");
 
