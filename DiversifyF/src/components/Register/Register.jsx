@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import './Register.css';
 
@@ -22,8 +22,9 @@ const Register = () => {
     try {
       const url = 'http://localhost:5174/api/users'; // Ensure this URL is correct
       const { data: res } = await axios.post(url, data);
-      navigate('/'); // Redirect to home page after successful registration
-      console.log(res.message); // Optionally log the response message
+      localStorage.setItem('token', res.token); // Save the token
+      localStorage.setItem('user', JSON.stringify(res.user)); // Save user info
+      navigate('/'); // Redirect to home page
     } catch (error) {
       if (error.response && error.response.status >= 400 && error.response.status <= 500) {
         setError(error.response.data.message); // Display error message if registration fails
@@ -34,7 +35,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <form onSubmit={handleSubmit} className="register-form">
-        <h1>Register</h1>
+        <h1 className="register-title">Register</h1>
         <input
           type="text"
           name="firstName"
@@ -70,6 +71,12 @@ const Register = () => {
         {error && <div className="error">{error}</div>}
         <button type="submit">Register</button>
       </form>
+      <div className="login-redirect">
+        <p>Already a user?</p>
+        <Link to="/login">
+          <button>Login Here</button>
+        </Link>
+      </div>
     </div>
   );
 };
