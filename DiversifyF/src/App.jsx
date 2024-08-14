@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
-import PageOne from './components/ConvertPage';
-import PageTwo from './components/About';
-import Register from './components/Register';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import PageOne from './components/ConvertPage/ConvertPage';
+import PageTwo from './components/About/About';
+import Register from './components/Register/Register';
+import Login from './components/Login/Login'; // Import the Login component
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/page-one" element={<PageOne />} />
             <Route path="/page-two" element={<PageTwo />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} /> {/* Added Login route */}
           </Routes>
         </main>
         <Footer /> {/* Footer appears on all pages */}

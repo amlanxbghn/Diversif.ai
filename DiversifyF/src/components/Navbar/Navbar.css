@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.875rem;
+    font-weight: bold;
+  }
+  
+  .register-button {
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .register-button:hover {
+    background-color: #2563eb;
+  }
+  
