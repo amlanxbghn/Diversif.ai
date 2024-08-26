@@ -62,6 +62,11 @@ const Convert = () => {
               <option value="LinkedIn">LinkedIn</option>
               <option value="Twitter">Twitter</option>
               <option value="YouTube">YouTube</option>
+              <option value="YouTube">Reddit</option>
+              <option value="YouTube">Discord</option>
+              <option value="YouTube">Quora</option>
+              <option value="YouTube">Facebook</option>
+              <option value="YouTube">Medium</option>
             </select>
           </div>
           <div className="w-full md:w-1/3 px-2 mb-4 md:mb-0">
@@ -76,10 +81,17 @@ const Convert = () => {
               <option value="LinkedIn">LinkedIn</option>
               <option value="Twitter">Twitter</option>
               <option value="YouTube">YouTube</option>
+              <option value="YouTube">Reddit</option>
+              <option value="YouTube">Discord</option>
+              <option value="YouTube">Quora</option>
+              <option value="YouTube">Facebook</option>
+              <option value="YouTube">Medium</option>
             </select>
           </div>
-          <div className="w-full md:w-1/6 px-2 flex items-end">
-            <button type="submit" className="w-full py-2 bg-blue-500 text-white rounded-lg font-semibold">Submit</button>
+        </div>
+        <div className='w-100vw flex items-center justify-center'>
+          <div className="w-full md:w-1/6 px-2 flex justify-center items-center">
+              <button type="submit" className="w-full py-2 bg-blue-500 text-white rounded-lg font-semibold">Submit</button>
           </div>
         </div>
       </form>
